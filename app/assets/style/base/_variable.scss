@@ -6,6 +6,7 @@ $gray100: #f8f9fa;
 $gray400: #ced4da;
 $gray600: #6c757d;
 $gray900: #212529;
+$red: #dc3545;
 
 $grays: (
   "100": $gray100,
@@ -19,6 +20,7 @@ $themes: (
   black: $black,
   white: $white,
   gray: $gray,
+  danger: $red,
 );
 
 // font
@@ -60,7 +62,7 @@ $spacers: (
   10: $spacer * 4.5,
   11: $spacer * 5,
   12: $spacer * 6,
-  '2d5': $spacer * 0.75,
+  "2d5": $spacer * 0.75,
 );
 
 $sides: (
