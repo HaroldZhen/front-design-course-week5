@@ -29,6 +29,13 @@ $font-family-roboto-mono: "Roboto Mono", monospace;
 
 // line-height
 $line-height-base: 1.5;
+$line-height-data: (
+  xs: 1,
+  sm: 1.2,
+  md: $line-height-base,
+  lg: 1.75,
+  xl: 2.5,
+);
 
 // gutter
 $gutter-width: 32px;
@@ -120,9 +127,8 @@ $size-data: (
   75: 75%,
   80: 80%,
   100: 100%,
-  auto: auto
+  auto: auto,
 ) !default;
-
 
 // position
 $pos: (static, relative, absolute, fixed, sticky) !default;

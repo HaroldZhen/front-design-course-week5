@@ -15,7 +15,7 @@
   }
 }
 
-.col-0 {
+.col-no-gutters {
   padding-left: 0;
   padding-right: 0;
 }
@@ -31,5 +31,15 @@
     padding-right: $gutter-width/2;
     max-width: 100% * ($i / $grid-columns);
     flex: 0 0 (100% * ($i / $grid-columns));
+  }
+}
+
+.row-gutters-sm {
+  margin-left: -($gutter-width / 4) !important;
+  margin-right: -($gutter-width / 4) !important;
+
+  > [class*="col-"] {
+    padding-left: $gutter-width/4 !important;
+    padding-right: $gutter-width/4 !important;
   }
 }
