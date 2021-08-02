@@ -58,3 +58,35 @@
     background-color: $gray100;
   }
 }
+
+.pagination {
+  display: flex;
+  .page-link {
+    color: $black;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .page-item {
+    border: 1px solid $gray400;
+    &:first-child > .page-link,
+    &:last-child > .page-link {
+      color: $primary;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+    }
+    &.active {
+      background-color: $primary;
+      color: $white;
+      & > .page-link {
+        color: $white;
+      }
+    }
+  }
+  .page-item + .page-item {
+    margin-left: -1px;
+  }
+}
