@@ -52,6 +52,10 @@
   .border-#{$i} {
     border: #{$i}px solid $gray400 !important;
   }
+  .border-y-#{$i} {
+    border-top: #{$i}px solid $gray400 !important;
+    border-bottom: #{$i}px solid $gray400 !important;
+  }
   .border-bottom-#{$i} {
     border-bottom: #{$i}px solid $gray400 !important;
   }
@@ -218,4 +222,10 @@
   color: $primary;
   background-color: $white;
   border: 1px solid $primary;
+}
+
+.placeholder-gray400 {
+  &::placeholder{
+    color: $gray400;
+  }
 }
