@@ -1,0 +1,29 @@
+.clearAfter {
+  &::after {
+    display: none;
+  }
+}
+
+.bg__avatar-user1 {
+  background-image: url(../images/user1.jpeg) !important;
+}
+.bg__avatar-user2 {
+  background-image: url(../images/user2.jpeg) !important;
+}
+.bg__avatar-user3 {
+  background-image: url(../images/user3.jpeg) !important;
+}
+
+.profile {
+  &__avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $gray-100;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.m-n2p {
+  margin-top: -2px !important;
+}

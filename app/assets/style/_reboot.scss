@@ -1,0 +1,47 @@
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $gray-900;
+}
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
+}
+img {
+  vertical-align: middle;
+}
+small {
+  color: $gray-600;
+}
+code {
+  color: $primary;
+  background-color: $gray-100;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+p,
+ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+small {
+  color: $gray-600;
+}
+code {
+  color: $success;
+  background-color: $gray-100;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.material-icons,
+.material-icons-outlined {
+  display: inline-block;
+  font-size: 24px;
+  line-height: inherit;
+  vertical-align: middle;
+  transform: translateY(-0.1em);
+}
