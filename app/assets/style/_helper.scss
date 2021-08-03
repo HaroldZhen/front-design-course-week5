@@ -27,3 +27,9 @@
 .m-n2p {
   margin-top: -2px !important;
 }
+
+.focus90deg {
+  &:focus [class^="material"] {
+    transform: rotate(180deg);
+  }
+}

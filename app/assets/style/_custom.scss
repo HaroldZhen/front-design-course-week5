@@ -74,6 +74,22 @@ $green: #198754 !default;
 // // scss-docs-end theme-color-variables
 
 $green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+// $green-500: $green !default;
+// $green-600: shade-color($green, 20%) !default;
+// $green-700: shade-color($green, 40%) !default;
+// $green-800: shade-color($green, 60%) !default;
+// $green-900: shade-color($green, 80%) !default;
+
+$component-active-bg: $green;
+// $pagination-border-width: 1px;
+$pagination-border-color: $green-300;
+$pagination-hover-bg: $green-100;
+$pagination-hover-border-color: $green-400;
+
+$green-100: tint-color($green, 80%) !default;
 
 $link-color: $black;
 

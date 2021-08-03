@@ -49,3 +49,7 @@
 .ck-editor__editable {
   min-height: 220px;
 }
+.modal-body{
+  max-height: calc( 100vh - 71px - 99px - 35px);
+  overflow: auto;
+}
