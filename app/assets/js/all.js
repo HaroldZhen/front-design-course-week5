@@ -1,4 +1,3 @@
-/* global ClassicEditor   */
 console.log('Hello!');
 
 $(document).ready(() => {
