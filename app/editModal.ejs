@@ -1,0 +1,99 @@
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0 p-5">
+        <h5 class="modal-title fs-2 fw-bold">Edit Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-5 pt-0">
+        <div>
+          <h6 class="fs-3 fw-bold mb-3">Account</h6>
+          <div class="mb-3">
+            <label for="NameInput" class="form-label fs-5 bg-gray100">Name</label>
+            <input type="name" disabled class="form-control" id="NameInput" value="Emir Wicks" />
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label fs-5 bg-gray100">Email</label>
+            <input type="email" disabled class="form-control" id="emailInput" value="emir.wicks@mail.com" />
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Verification</h6>
+          <div class="d-flex justify-content-between">
+            <p class="mb-3 fw-bold">
+              <span class="material-icons fs-3 me-2 line-height-xs text-success">
+                check_circle </span>Verified
+            </p>
+            <p class="fs-5 text-gray-900">2020/4/12</p>
+          </div>
+          <div class="pb-4 border-bottom border-gray-400">
+            <button type="button" disabled class="btn btn-outline-secondary w-100 py-3">
+              Send Verification Mail
+            </button>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Access Level</h6>
+          <div class="mb-3">
+            <select class="form-select py-3">
+              <option selected>Admin</option>
+            </select>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Custom Access</h6>
+          <div class="mb-3">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label fs-4" for="flexCheckDefault">
+                lecture
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                task menu
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Deactivate Account</h6>
+          <p class="mb-3 text-danger">
+            <span class="material-icons fs-3 me-2 line-height-xs">
+              warning </span>This cannot be undone!
+          </p>
+          <button type="button" class="btn btn-outline-danger fw-bold w-100 py-3">
+            Deactivate This Account
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-outline-success me-3 px-5 py-2" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-success px-5 py-2">
+          Update
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
