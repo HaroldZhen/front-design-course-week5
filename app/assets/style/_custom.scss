@@ -35,19 +35,19 @@ $font-family-sans-serif: "Lato", system-ui, -apple-system, "Segoe UI", Roboto,
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 2.5,
-  7: $spacer * 3,
-  8: $spacer * 3.5,
-  9: $spacer * 4,
-  10: $spacer * 4.5,
-  11: $spacer * 5,
-  12: $spacer * 6,
-  "2d5": $spacer * 0.75,
+  1: $spacer * 0.25, // 4px
+  2: $spacer * 0.5,  // 8px
+  3: $spacer,        // 16px
+  4: $spacer * 1.5,  // 24px
+  5: $spacer * 2,    // 32px
+  6: $spacer * 2.5,  // 40px
+  7: $spacer * 3,    // 48px
+  8: $spacer * 3.5,  // 56px
+  9: $spacer * 4,    // 64px
+  10: $spacer * 4.5, // 72px
+  11: $spacer * 5,   // 80px
+  12: $spacer * 6,   // 96px
+  "2d5": $spacer * 0.75, // 12px
 );
 
 $enable-negative-margins: true;
@@ -64,14 +64,14 @@ $h5-font-size: $font-size-base * 0.875 !default;
 $h6-font-size: $font-size-base * 0.5 !default;
 
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  7: $font-size-base * 0.875,
-  8: $font-size-base * 0.75,
+  1: $h1-font-size, // 32px
+  2: $h2-font-size, // 24px
+  3: $h3-font-size, // 20px
+  4: $h4-font-size, // 16px
+  5: $h5-font-size, // 14px
+  6: $h6-font-size, // 8px
+  7: $font-size-base * 0.875, // 14px
+  8: $font-size-base * 0.75,  // 12px
 );
 
 $link-decoration: none;

@@ -48,3 +48,6 @@ code {
 .modal *{
   margin-bottom: 0;
 }
+a:hover, a:focus {
+  color: $green-400 !important;
+}
