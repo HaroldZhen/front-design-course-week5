@@ -22,12 +22,12 @@
         </div>
         <ul class="sidebar-menu nav flex-column fw-bold flex-grow-1">
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link link-disabled" href="#"
               ><span class="material-icons"> assessment </span>Dashboard</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link link-disabled" href="#"
               ><span class="material-icons"> question_answer </span>Question</a
             >
           </li>
@@ -39,7 +39,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link link-disabled" href="#"
               ><span class="material-icons"> video_library </span>Course</a
             >
           </li>
@@ -51,7 +51,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link link-disabled" href="#"
               ><span class="material-icons"> settings </span>Settings</a
             >
           </li>
@@ -359,11 +359,226 @@
 
       </div>
     </div>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script> -->
+    <div class="modal fade" id="viewModal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="d-flex">
+        <div class="flex-shrink-0">
+          <img src="./assets/images/user3.jpeg" class="me-4" alt="user3.jpeg">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          <div class="d-flex justify-content-between mb-1">
+            <p>#1</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <p class="fs-3">Admin</p>
+          <h5 class="fs-2 mb-2 fw-bold">Emir Wicks</h5>
+          <p class="mb-3">
+            <p class="fs-4">emir.wicks@mail.com</p>
+          </p>
+          <div class="d-flex justify-content-between align-items-end">
+            <span class="bg-gray-100 px-2 py-1">verified</span>
+            <div><a data-bs-toggle="collapse" class="focus90deg" href="#editExample" role="button"
+                aria-expanded="false" aria-controls="editExample">
+                <span class="material-icons text-success fs-3 lh-1">
+                  expand_more
+                </span>
+              </a></div>
+          </div>
+          <div class="collapse w-100" id="editExample">
+            <div class="row p-3 justify-content-between">
+              <button class="btn btn-outline-danger col-8" data-bs-dismiss="modal">Deactivate</button>
+              <button class="btn btn-success col-3" data-bs-target="#editModal" data-bs-toggle="modal"
+                data-bs-dismiss="modal">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0 p-5">
+        <h5 class="modal-title fs-2">New Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-5 pt-0">
+        <div>
+          <h6 class="fs-3 fw-bold mb-3">Account</h6>
+          <div class="mb-3">
+            <label for="userName" class="form-label fs-4">Name</label>
+            <input type="name" class="form-control" id="userName" />
+          </div>
+          <div class="mb-3">
+            <label for="userEmail" class="form-label fs-4">Email</label>
+            <input type="email" class="form-control" id="userEmail" />
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-4 fw-bold mb-3">Verification</h6>
+          <p class="mb-3">
+            <span class="material-icons fs-3 me-2 line-height-xs text-danger">
+              warning </span>Unverified
+          </p>
+          <div class="mb-4">
+            <button type="button" class="btn btn-outline-success w-100 py-3 border-gray400">Send Verification
+              Mail</button>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-4 fw-bold mb-3">Access Level</h6>
+          <div class="mb-3">
+            <select class="form-select py-3 text-gray600">
+              <option selected>-Choose access level-</option>
+            </select>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-4 fw-bold mb-3">Custom Access</h6>
+          <div class="mb-3">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="lectureChecked">
+              <label class="form-check-label fs-4" for="lectureChecked">
+                lecture
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="couponChecked">
+              <label class="form-check-label fs-4" for="couponChecked">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="messageChecked">
+              <label class="form-check-label fs-4" for="messageChecked">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="settingChecked">
+              <label class="form-check-label fs-4" for="settingChecked">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="taskmenuChecked">
+              <label class="form-check-label fs-4" for="taskmenuChecked">
+                task menu
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success me-3 px-5 py-2" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-success px-5 py-2">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0 p-5">
+        <h5 class="modal-title fs-2 fw-bold">Edit Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-5 pt-0">
+        <div>
+          <h6 class="fs-3 fw-bold mb-3">Account</h6>
+          <div class="mb-3">
+            <label for="NameInput" class="form-label fs-5 bg-gray100">Name</label>
+            <input type="name" disabled class="form-control" id="NameInput" value="Emir Wicks" />
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label fs-5 bg-gray100">Email</label>
+            <input type="email" disabled class="form-control" id="emailInput" value="emir.wicks@mail.com" />
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Verification</h6>
+          <div class="d-flex justify-content-between">
+            <p class="mb-3 fw-bold">
+              <span class="material-icons fs-3 me-2 line-height-xs text-success">
+                check_circle </span>Verified
+            </p>
+            <p class="fs-5 text-gray-900">2020/4/12</p>
+          </div>
+          <div class="pb-4 border-bottom border-gray-400">
+            <button type="button" disabled class="btn btn-outline-secondary w-100 py-3">
+              Send Verification Mail
+            </button>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Access Level</h6>
+          <div class="mb-3">
+            <select class="form-select py-3">
+              <option selected>Admin</option>
+            </select>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Custom Access</h6>
+          <div class="mb-3">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label fs-4" for="flexCheckDefault">
+                lecture
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Coupon
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Message
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                Setting
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label fs-4" for="flexCheckChecked">
+                task menu
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="border-top-1 pt-4">
+          <h6 class="fs-3 fw-bold mb-3">Deactivate Account</h6>
+          <p class="mb-3 text-danger">
+            <span class="material-icons fs-3 me-2 line-height-xs">
+              warning </span>This cannot be undone!
+          </p>
+          <button type="button" class="btn btn-outline-danger fw-bold w-100 py-3">
+            Deactivate This Account
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="btn btn-outline-success me-3 px-5 py-2" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-success px-5 py-2">
+          Update
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"

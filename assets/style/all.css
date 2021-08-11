@@ -11468,4 +11468,7 @@ a:hover, a:focus {
 .list-disc {
   list-style-type: disc; }
 
+.link-disabled {
+  color: #adb5bd; }
+
 /*# sourceMappingURL=all.css.map */
